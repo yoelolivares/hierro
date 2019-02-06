@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="wrapper">
+        <div class="nav-btn icon">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>                
+        </div>
+    </div>    
+    <div class="main-nav">
+        <a href="#" class="cart-icon">View Cart<i class="fa fa-shopping-cart fa-lg"></i></a>
+        <a class="brand" href="Index.html"><img src="images/hierro-logo.png" class="logo" alt="logo of company"></a>      
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Company.html">Company</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contact-section">
+
+        <div class=".clearfix col-left">
+            <h2 class="content-title">Contact Information<span class="bot-border"></span></h2>
+            <p class="contact-info"><i class="phone-icon fas fa-phone"></i> 1-800-555-5555</p>
+            <p class="contact-info"><i class="email-icon fas fa-envelope"></i> example@example.com</p>
+            <p class="contact-info"><i class="location-icon fas fa-map-marked"></i> 5677 example ave
+            Notaplace<br> California 9999
+            United States</p>
+            <div class="box-wrapper">
+                <div class="box">
+                    <div class="box-header">
+                        <h4>Sales/Support</h4>
+                    </div>
+                <p>Hours: Mon-Fri 6:00AM-6:00PM<br>
+                   Sat-Sun Closed</p>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                        <h4>Marketing</h4>
+                    </div>
+                    <p>Hours: Mon-Fri 6:00AM-6:00PM<br>
+                       Sat-Sun Closed</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div id="map">
+        </div>
+        
+    </section>
+
+
+
+<script src="js/main.js"></script>
+<script>
+    function initMap () {
+        var location = {lat:34.052235, lng:-118.243683};
+        var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location, 
+        map: map
+    });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfhB_fjfgVA9AgcAX8FKWbE5IppZBfA60&callback=initMap"></script>
+</body>
+</html>

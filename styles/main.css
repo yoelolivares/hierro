@@ -198,12 +198,12 @@ p {
 /*-------------------------------------------
  Product page
  ------------------------------------------*/
-
 .product-section .col{
     width: 33.3333%;
     float: left;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .product-section .col-1 {
     background-image: url('../images/veneno-bg.jpg');
@@ -239,60 +239,55 @@ p {
     transition: background-color .5s ease-in-out;
     background-color: rgba(0, 0, 0, 0.6)
 }
-.item-card {
+.item-description-card {
     position: absolute;
     bottom: 0%;
     z-index: 8000;
     background-color: #fff;
     width: 100%;
-    height: 100%;
+    height: 0;
+    
 }
-.item-card-1,
-.item-card-2,
-.item-card-3 {
-    display: none;
-}
-.item-card img {
+.item-description-card img {
     width: 60%;
     height: auto;
 }
-.item-card h3 {
+.item-description-card h3 {
     color: #32AEFE;
     font-size: 1.5em;
     margin: 10px 0;
 }
-.item-card ul {
+.item-description-card ul {
     margin: 0 auto;
     width: 80%;
     list-style-type: none;
     line-height: 2.5em;
 }
-.item-card ul li{
+.item-description-card ul li{
     font-size: 1em;
     text-align: left;
 }
-.item-card .price {
+.item-description-card .price {
     font-size: 2em;
     display: block;
     margin: 10px 0;
     color: #11496d;
     font-weight: bold;
 }
-.item-card .add-to-cart-btn:hover {
+.item-description-card .add-to-cart-btn:hover {
     background: #6b6a6a;
     -o-transition: all ease-in-out .3s;
     -moz-transition: all ease-in-out .3s;
     -webkit-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
 }
-.item-card .add-to-cart-btn {
+.item-description-card .add-to-cart-btn {
     display: inline-block;
     text-decoration: none;
     color: #CACBCC;
     background-color: #32AEFE;
     padding: 10px;
     margin: 10px 0;
-    border-radius: 5px;
 }
 .minimize-btn:hover {
     background: #32AEFE;
@@ -620,18 +615,18 @@ p {
     .minimize-btn {
         display: none;
     }
-    .item-card {
+    .item-description-card {
         display: block;
         border-bottom: 1px solid #11496d;
     }
-    .item-card img {
+    .item-description-card img {
         padding: 10px;
         width: 50%;
     }
-    .item-card h3 {
+    .item-description-card h3 {
         font-size: 2em;
     }
-    .item-card ul li {
+    .item-description-card ul li {
         font-size: 1.2em;
         line-height: 1.6em;
     }
@@ -675,7 +670,7 @@ p {
         width: 100%;
         display: block
     }
-    .item-card-1, .item-card-2, .item-card-3 {
+    .item-description-card {
         display: block;
     }
     .contact-section #map {

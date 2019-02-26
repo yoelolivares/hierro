@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Product Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     
 </head>
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <div class="nav-btn icon">
             <span class="line top"></span>
             <span class="line middle"></span>
@@ -21,7 +21,7 @@
     </div>    
     <div class="main-nav">
         <a href="#" class="cart-icon">View Cart<i class="fa fa-shopping-cart fa-lg"></i></a>
-        <a class="brand" href="Index.html"><img src="images/hierro-logo.png" class="logo" alt="logo of company"></a>      
+        <a class="brand" href="Index.html"><img src="images/hierro-logo.png" class="logo" alt="Hierro logo"></a>      
         <nav>
             <ul>
                 <li><a href="Index.html">Home</a></li>
@@ -37,7 +37,7 @@
             <div class="item">  
                 <h3>item</h3>
                 <div class="product-image">
-                    <img src="images/striker.jpg">
+                    <img src="images/striker.jpg" alt="image of striker pc">
                 </div>
             </div>
             <div class="item-price">
@@ -75,17 +75,17 @@
     </div>
     <section class="product-section">
         <div class="col col-1">
-            <div class="overlay js-animateUp">
+            <div class="overlay js-open-card-info">
                <h1>Veneno<span class="bot-border"></span></h1> 
                      
                 <div class="item-description-card">
-                    <div class="minimize-btn">
+                    <div class="minimize-btn js-close-card-info">
                         <div class="minimize-icon">
                             <span class="minimize line"></span>
                             <span class="minimize line"></span>
                         </div>     
                     </div>
-                    <img src="images/veneno.jpg">                
+                    <img src="images/veneno.jpg" alt="image of veneno pc">                
                     <div class="item-spec">
                         <h3>Veneno</h3>
                         <ul>
@@ -105,17 +105,17 @@
         </div>
 
         <div class="col col-2">
-            <div class="overlay js-animateUp">
+            <div class="overlay js-open-card-info">
                 <h1>Big boy<span class="bot-border"></span></h1>
             
                 <div class="item-description-card">
-                    <div class="minimize-btn">
+                    <div class="minimize-btn js-close-card-info">
                         <div class="minimize-icon">
                             <span class="minimize line"></span>
                             <span class="minimize line"></span>
                         </div>     
                     </div>
-                    <img src="images/bigboy.jpg">
+                    <img src="images/bigboy.jpg" alt="image of Bigboy pc">
                     <div>
                         <h3>Big Boy</h3>
                         <ul>
@@ -136,17 +136,17 @@
         </div>
 
         <div class="col col-3">
-            <div class="overlay js-animateUp">
+            <div class="overlay js-open-card-info">
                <h1>Striker<span class="bot-border"></span></h1> 
             
                 <div class="item-description-card">
-                    <div class="minimize-btn">
+                    <div class="minimize-btn js-close-card-info">
                         <div class="minimize-icon">
                             <span class="minimize line"></span>
                             <span class="minimize line"></span>
                         </div>     
                     </div>
-                    <img src="images/striker.jpg">
+                    <img src="images/striker.jpg" alt="picture of striker pc">
                     <div class="item-specs">
                         <h3>Striker</h3>
                         <ul>
@@ -169,7 +169,7 @@
 
 
 
-
-<script src="js/main.js"></script>   
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>   
 </body>
 </html>

@@ -208,10 +208,12 @@ p {
 }
 .product-section .col-2 {
     background-image: url('../images/bigboy-bg.jpg');
+    background-repeat: no-repeat;
     background-position-x: -370px;
 }
 .product-section .col-3 {
     background-image: url('../images/striker-bg.jpg');
+    background-repeat: no-repeat;
     background-position: center;
 }
 .product-section .col .overlay h1 {
